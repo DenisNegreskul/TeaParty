@@ -35,7 +35,7 @@ class Crockery {
         return volume;
     }
 
-    protected void display(int volume, double speed, String action) {
+    protected void display(int volume, String action) {
         System.out.printf("%f seconds were spent to %s %d milliliters.\n", volume / speed, action, volume);
         if (currentVolume >= maxCapacity) {
             System.out.println("The " + crockeryType + " is full.");

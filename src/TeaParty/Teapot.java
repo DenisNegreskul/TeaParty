@@ -11,14 +11,14 @@ class Teapot extends Crockery {
     @Override
     protected double fillUp(int volume) {
         volume = (int)super.fillUp(volume);
-        display(volume, speed, "fill up");
+        display(volume, "fill up");
         return volume / speed;
     }
 
     @Override
     protected double pourOut(int volume) {
         volume = (int)super.pourOut(volume);
-        display(volume, speed * speedFactor, "pour out");
+        display(volume, "pour out");
         return volume / (speed * speedFactor) ;
     }
 }
